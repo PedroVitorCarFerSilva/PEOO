@@ -6,7 +6,7 @@ class uri1012{
     double a = double.Parse(dantas[0]);
     double b = double.Parse(dantas[1]);
     double c = double.Parse(dantas[2]);
-    double tri = a*c;
+    double tri = a*c/2;
     double cir = 3.14159*Math.Pow(c, 2);
     double tra = ((a+b)*c)/2;
     double qua = b*b;
