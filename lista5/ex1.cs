@@ -7,10 +7,7 @@ class uri1036{
     double b = double.Parse(coscas[1]);
     double c = double.Parse(coscas[2]);
     double delta = Math.Pow(b, 2) - 4*a*c;
-    if (a == 0) {
-      Console.WriteLine("Impossivel calcular");
-    }
-    else if (delta < 0) {
+    if (a == 0 || delta < 0) {
       Console.WriteLine("Impossivel calcular");
     }
     else {
