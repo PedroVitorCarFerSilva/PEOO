@@ -11,12 +11,13 @@ class exercicio4 {
     int hor1 = int.Parse(hora1[0]);
     int min2 = int.Parse(hora2[1]);
     int hor2 = int.Parse(hora2[0]);
-    int minutos = min2 - min1;
-    if (minutos < 0) {
-      minutos += 60;
-      hor1 += 1;
+    int minutos = min2 + min1;
+    int horamin = 0;
+    if (minutos >= 60) {
+      horamin = minutos/60;
+      minutos = minutos%60;
     }
-    int horas = hor2 - hor1;
-    Console.WriteLine($"Total de horas = {horas}:{minutos}");
+    int horas = hor2 + hor1 + horamin;
+    Console.WriteLine($"Total de horas = {horas:00}:{minutos:00}");
   }
 }
