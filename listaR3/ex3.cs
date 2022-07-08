@@ -1,5 +1,5 @@
 using System;
-class exercicio1 {
+class exercicio3 {
   static void Main() {
     int rep = 1;
     while (rep <= 10 && rep >= -10) {
