@@ -5,9 +5,12 @@ class Exercicio8 {
     Console.WriteLine(MenorInteiro(x));
   }
   public static double MenorInteiro(double x) {
-    string s = x.ToString();
-    string[] n = s.Split(".");
-    int i = int.Parse(n[0]);
-    return i+1;
+    int i = (int) x;
+    int z = 1;
+    if (x == i) {
+      z--;
+    }
+    return i+z;
+    /*Math.Celling() tambem pode ser usado*/
   }
 }
